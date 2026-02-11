@@ -1,0 +1,16 @@
+// media aliases and breakpoints
+$screen-tablet: 768px;
+$screen-desktop: 1024px;
+
+// media devices
+@mixin media-tablet {
+  @media screen and (min-width: #{$screen-tablet}) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media screen and (min-width: #{$screen-desktop}) {
+    @content;
+  }
+}
